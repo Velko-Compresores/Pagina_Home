@@ -2,16 +2,21 @@
 
 :root{
     --main-color:#d3ad7f;
-    --black:#bcbcdb;
-    --color-bakground-write:#ffffff;
-    --velko-color-one:#1c3661;
-    --velko-color-two:#506e9e;
-    --txt-color-write:#ffffff;
-    --txt-color-velko:#1c3661;
-    --txt-color-grey:#ccc;
+    /*--black:#13131a;*/
+    color:rgb(4, 18, 63);
+    --cor-azul1:#1c3661;
+    --cor-azul2:#468cbc;
+    --cor-azul3:#82ceea;
+    --cor-azul4:#0d2d43;
+    --cor-branco:#ffffff;
+    --cor-preto:#000000;
+    --cor-dourado:#ccc;
+
     --bg:#010103;
-    --border:.1rem solid #1c3661;
+    /* configuracao de todas as bordas da pagina */
+    /* --border:.2rem solid var(--cor-azul2); */
 }
+
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -43,7 +48,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: rgb(255, 255, 255);
+    background: var(--cor-azul1);
 }
 
 section{
@@ -52,14 +57,14 @@ section{
 
 .heading{
     text-align: center;
-    color: var(--velko-color-one);
+    color:#fff;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
 
 .heading span{
-    color: var(--velko-color-two);
+    color:var(--main-color);
     text-transform: uppercase;
 }
 
@@ -69,8 +74,8 @@ section{
     display: inline-block;
     padding:.9rem 3rem;
     font-size: 1.7rem;
-    color:var(--txt-color-write);
-    background: var(--velko-color-one);
+    color:#fff;
+    background: var(--main-color);
     cursor: pointer;
 }
 
@@ -80,7 +85,7 @@ section{
 
 /* ----------------------INICIO HEADER/MENU-------------------------*/
 .header{
-    background: var(--color-bakground-write);
+    background: rgb(130, 137, 160);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,25 +97,25 @@ section{
 }
 
 .header .logo img{
-    height: 7rem;
+    height: 4rem;
 }
 
 .header .navbar a{
-    margin:0 5rem;
+    margin:0 1rem;
     font-size: 1.5rem;
-    color:var(--velko-color-one);
+    color:#fff;
     text-transform: uppercase;
 }
 
 .header .navbar a:hover{
-    color:var(--velko-color-two);
-    border-bottom: .1rem solid var(--velko-color-two);
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
-
+    
 }
 
 .header .icons div{
-    color:var(--velko-color-two);
+    color:#fff;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -130,10 +135,10 @@ section{
 
 /* ----------------------INICIO HOME------------------------*/
 .home{
-    /* min-height: 100vh; */
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
+    background:url(../images/home-img.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -145,14 +150,14 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color:var(--velko-color-two);
+    color:var(--cor-azul1)
 }
 
 .home .content h4{
 
     font-size: 3rem;
     text-transform: uppercase;
-    color:var(--velko-color-two);
+    color:var(--cor-azul1)
 }
 
 
@@ -161,7 +166,7 @@ section{
     font-weight: lighter;
     line-height: 1.8;
     padding:1rem 0;
-    color:var(--velko-color-two);
+    color:#eee;
 }
 /* ----------------------FINAL HOME------------------------*/
 
@@ -170,7 +175,7 @@ section{
 .about .row{
     display: flex;
     align-items: center;
-    background:var(--color-bakground-write);
+    background:var(--black);
     flex-wrap: wrap;
 }
 
@@ -194,11 +199,12 @@ section{
 
 .about .row .content p{
     font-size: 1.6rem;
-    color:var(--txt-color-grey);
+    color:#ccc;
     padding:1rem 0;
     line-height: 1.8;
 }
 /* ----------------------FINAL SOBRE-----------------------------*/
+
 
 /* ----------------------INICIO BLOG-------------------------*/
 .blogs .box-container{
@@ -209,7 +215,8 @@ section{
 
 .blogs .box-container .box{
     border-radius: 10px;
-    border:var(--border);    
+    /* border:var(--border);     */
+    border:.2rem solid var(--cor-azul2);
 }
 
 .blogs .box-container .box .image{
@@ -236,15 +243,15 @@ section{
 .blogs .box-container .box .content .title{
     font-size: 2.5rem;
     line-height: 1.5;
-    color:var(--velko-color-two)
+    color:#fff;
 }
 
 .blogs .box-container .box .content .title:hover{
-    color:var(--velko-color-two);
+    color:var(--main-color);
 }
 
 .blogs .box-container .box .content span{
-    color:var(--velko-color-two);
+    color:var(--main-color);
     display: block;
     padding-top: 1rem;
     font-size: 2rem;
@@ -270,14 +277,18 @@ section{
     gap:1rem;
 }
 
-
+/*.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}*/
 
 .contact .row form{ /*Form*/
     border-radius: 10px;
     flex:1rem;
     padding:5rem 10rem;
     text-align: center;
-    background:var(--velko-color-one);
+    background:rgb(37, 50, 92);
     border:var(--border);
 }
 
@@ -317,7 +328,7 @@ section{
 
 /* ----------------------INICIO FOOTER-------------------------*/
 .footer{
-    background:var(--color-bakground-write);
+    background:var(--black);
     text-align: center;
 }
 
@@ -330,14 +341,14 @@ section{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    color:var(--velko-color-one);
+    color:#fff;
     border:var(--border);
     margin:.3rem;
     border-radius: 50%;
 }
 
 .footer .share a:hover{
-    background-color: var(--txt-color-grey);
+    background-color: var(--main-color);
 }
 
 .footer .links{
@@ -361,13 +372,13 @@ section{
 
 .footer .credit{
     font-size: 1.7rem;
-    color:var(--txt-color-grey);
+    color:#fff;
     font-weight: lighter;
     padding:1.5rem;
 }
 
 .footer .credit span{
-    color:var(--txt-color-grey)
+    color:var(--main-color);
 }
 /* ----------------------FINAL FOOTER-------------------------*/
 
@@ -432,7 +443,7 @@ section{
 
     .home{
         background-position: left;
-        /* justify-content: center; */
+        justify-content: center;
         text-align: center;
     }
 
