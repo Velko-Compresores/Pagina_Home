@@ -48,7 +48,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: var(--cor-azul1);
+    background: var(--cor-dourado);
 }
 
 section{
@@ -172,7 +172,7 @@ section{
 }
 
 .home .content .btn:hover{
-    letter-spacing: .10rem;
+    letter-spacing: .2rem;
 }
 
 /* ----------------------FINAL HOME------------------------*/
@@ -206,10 +206,44 @@ section{
 
 .about .row .content p{
     font-size: 1.6rem;
-    color:#ccc;
+    color:var(--cor-dourado);
     padding:1rem 0;
     line-height: 1.8;
 }
+
+.about  .content .btn{
+    border-radius: 2px;
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:var(--cor-branco);
+    background: var(--cor-azul1);
+    cursor: pointer;
+}
+
+.about  .content .btn:hover{
+    letter-spacing: .2rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--cor-azul1);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--cor-azul2);
+    text-transform: uppercase;
+}
+
+
+
+
+
+
 /* ----------------------FINAL SOBRE-----------------------------*/
 
 
