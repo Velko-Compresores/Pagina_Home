@@ -19,7 +19,7 @@
 
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sunflower', 'Roboto', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -55,67 +55,54 @@ section{
     padding:2rem 7%;
 }
 
-.heading{
-    text-align: center;
-    color:#fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-}
-
-.heading span{
-    color:var(--main-color);
-    text-transform: uppercase;
-}
-
-
 
 /* ----------------------INICIO HEADER/MENU-------------------------*/
 .header{
-    background: var(--cor-dourado);
+    background: var(--cor-branco);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:1.5rem 7%;
-    border-bottom: var(--border);
+    border-bottom: var(--cor-azul3);
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
 }
 
 .header .logo img{
-    height: 4rem;
+    height: 5rem;
 }
 
 .header .navbar a{
     margin:0 1rem;
-    font-size: 1.5rem;
-    color:#fff;
+    font-size: 1.7rem;
+    color:var(--cor-azul1);
     text-transform: uppercase;
+    font-weight: bold; 
 }
 
+
 .header .navbar a:hover{
-    color:var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
+    color:var(--cor-azul2);
+    border-bottom: .1rem solid var(--cor-azul2);
     padding-bottom: .5rem;
     
 }
 
 .header .icons div{
-    color:#fff;
+    color:var(--cor-azul1);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
 
 .header .icons div:hover{
-    color:var(--main-color);
+    color:var(--cor-azul2);
 }
 
 #menu-btn{
     display: none;
 }
-
 /* ----------------------FINAL HEADER/MENU------------------------*/
 
 
@@ -123,44 +110,48 @@ section{
 .home{
     min-height: 70vh;
     display: flex;
-    align-items: center;
-    background:url(../images/home-img.png) no-repeat;
+    justify-content: left;
+    align-items:center;
+    background:url(../images/home-img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.home .content{
-    max-width: 60rem;
+ .home .content{
+    max-width: 75rem;
+    text-align:left;
+    font-size: 5rem;
+    padding: 2rem 7%;
+    color:var(--cor-azul1);
 }
 
-.home .content h3{
-    font-size: 6rem;
-    text-transform: uppercase;
-    color:var(--cor-azul1)
+.home .content .heading{
+    color:var(--cor-azul1);
 }
 
-.home .content h4{
-
-    font-size: 3rem;
-    text-transform: uppercase;
-    color:var(--cor-azul1)
+.home .content .heading span{
+    color:var(--cor-azul1);
 }
 
 
 .home .content .btn{
-    border-radius: 2px;
-    margin-top: 1rem;
+    border-radius: 5px;
+    margin-top: 5rem;
     display: inline-block;
-    padding:.9rem 3rem;
-    font-size: 1.7rem;
-    color:var(--cor-branco);
+    padding: 1rem 10rem; /* aumentei o padding vertical para melhor centralização */
+    font-size: 2.5rem;
+    font-weight: bold; 
+    color: var(--cor-branco);
     background: var(--cor-azul1);
     cursor: pointer;
+    text-align: center; /* centraliza horizontalmente o texto */
+    line-height: normal; /* garante que o texto não fique desalinhado verticalmente */
 }
 
 .home .content .btn:hover{
     letter-spacing: .2rem;
 }
+
 
 /* ----------------------FINAL HOME------------------------*/
 
@@ -171,10 +162,11 @@ section{
     align-items: center;
     /* background:var(--cor-branco); */
     flex-wrap: wrap;
+    padding: 2rem 7%;
 }
 
 .about .row .image{
-    flex:1 1 10rem;
+    flex:1 1 20rem;
 }
 
 .about .row .image img{
@@ -187,21 +179,24 @@ section{
 }
 
 .about .row .content p{
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     color:var(--cor-dourado);
     padding:1rem 0;
     line-height: 1.8;
 }
 
-.about  .content .btn{
-    border-radius: 2px;
-    margin-top: 1rem;
+.about .content .btn{
+    border-radius: 5px;
+    margin-top: 5rem;
     display: inline-block;
-    padding:.9rem 3rem;
-    font-size: 1.7rem;
-    color:var(--cor-branco);
+    padding: 1rem 10rem; /* aumentei o padding vertical para melhor centralização */
+    font-size: 2.5rem;
+    font-weight: bold; 
+    color: var(--cor-branco);
     background: var(--cor-azul1);
     cursor: pointer;
+    text-align: center; /* centraliza horizontalmente o texto */
+    line-height: normal; /* garante que o texto não fique desalinhado verticalmente */
 }
 
 .about .content .btn:hover{
@@ -210,7 +205,7 @@ section{
 
 .about .heading{
     text-align: center;
-    color:var(--cor-azul1);
+    color:var(--cor-azul2);
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
@@ -310,7 +305,6 @@ section{
     text-transform: uppercase;
 }
 
-
 /* ----------------------FINAL BLOG-------------------------*/
 
 
@@ -391,9 +385,6 @@ section{
     color:var(--cor-azul2);
     text-transform: uppercase;
 }
-
-
-
 
 /* ----------------------FINAL CONTATOS-------------------------*/
 
