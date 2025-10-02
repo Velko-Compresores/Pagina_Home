@@ -68,7 +68,7 @@ section{
     text-transform: uppercase;
 }
 
-.btn{
+/* .btn{
     border-radius: 2px;
     margin-top: 1rem;
     display: inline-block;
@@ -77,11 +77,11 @@ section{
     color:#fff;
     background: var(--main-color);
     cursor: pointer;
-}
+} */
 
-.btn:hover{
+/* .btn:hover{
     letter-spacing: .2rem;
-}
+} */
 
 /* ----------------------INICIO HEADER/MENU-------------------------*/
 .header{
@@ -132,7 +132,6 @@ section{
 /* ----------------------FINAL HEADER/MENU------------------------*/
 
 
-
 /* ----------------------INICIO HOME------------------------*/
 .home{
     min-height: 70vh;
@@ -161,13 +160,21 @@ section{
 }
 
 
-.home .content p{
-    font-size: 2rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding:1rem 0;
-    color:#eee;
+.home .content .btn{
+    border-radius: 2px;
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:var(--cor-branco);
+    background: var(--cor-azul1);
+    cursor: pointer;
 }
+
+.home .content .btn:hover{
+    letter-spacing: .10rem;
+}
+
 /* ----------------------FINAL HOME------------------------*/
 
 
