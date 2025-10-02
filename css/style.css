@@ -85,7 +85,7 @@ section{
 
 /* ----------------------INICIO HEADER/MENU-------------------------*/
 .header{
-    background: rgb(130, 137, 160);
+    background: var(--cor-dourado);
     display: flex;
     align-items: center;
     justify-content: space-between;
