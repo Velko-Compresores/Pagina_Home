@@ -48,7 +48,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: var(--cor-dourado);
+    background: var(--cor-branco);
 }
 
 section{
@@ -68,20 +68,7 @@ section{
     text-transform: uppercase;
 }
 
-/* .btn{
-    border-radius: 2px;
-    margin-top: 1rem;
-    display: inline-block;
-    padding:.9rem 3rem;
-    font-size: 1.7rem;
-    color:#fff;
-    background: var(--main-color);
-    cursor: pointer;
-} */
 
-/* .btn:hover{
-    letter-spacing: .2rem;
-} */
 
 /* ----------------------INICIO HEADER/MENU-------------------------*/
 .header{
@@ -182,7 +169,7 @@ section{
 .about .row{
     display: flex;
     align-items: center;
-    background:var(--black);
+    /* background:var(--cor-branco); */
     flex-wrap: wrap;
 }
 
@@ -197,11 +184,6 @@ section{
 .about .row .content{
     flex:1 1 45rem;
     padding:2rem;
-}
-
-.about .row .content h3{
-    font-size: 3rem;
-    color:#fff;
 }
 
 .about .row .content p{
@@ -222,11 +204,11 @@ section{
     cursor: pointer;
 }
 
-.about  .content .btn:hover{
+.about .content .btn:hover{
     letter-spacing: .2rem;
 }
 
-.heading{
+.about .heading{
     text-align: center;
     color:var(--cor-azul1);
     text-transform: uppercase;
@@ -234,15 +216,10 @@ section{
     font-size: 4rem;
 }
 
-.heading span{
+.about .heading span{
     color:var(--cor-azul2);
     text-transform: uppercase;
 }
-
-
-
-
-
 
 /* ----------------------FINAL SOBRE-----------------------------*/
 
@@ -284,15 +261,15 @@ section{
 .blogs .box-container .box .content .title{
     font-size: 2.5rem;
     line-height: 1.5;
-    color:#fff;
+    color:var(--cor-azul1);
 }
 
 .blogs .box-container .box .content .title:hover{
-    color:var(--main-color);
+    color:var(--cor-azul3);
 }
 
 .blogs .box-container .box .content span{
-    color:var(--main-color);
+    color:var(--cor-azul4);
     display: block;
     padding-top: 1rem;
     font-size: 2rem;
@@ -301,14 +278,43 @@ section{
 .blogs .box-container .box .content p{
     font-size: 1.6rem;
     line-height: 1.8;
-    color:#ccc;
+    color:var(--cor-dourado);
     padding:1rem 0;
 }
+
+.blogs .box-container .box .content .btn{
+    border-radius: 2px;
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:var(--cor-branco);
+    background: var(--cor-azul1);
+    cursor: pointer;
+}
+
+.blogs .box-container .box .content .btn:hover{
+    letter-spacing: .2rem;
+}
+
+.blogs .heading{
+    text-align: center;
+    color:var(--cor-azul1);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.blogs .heading span{
+    color:var(--cor-azul2);
+    text-transform: uppercase;
+}
+
+
 /* ----------------------FINAL BLOG-------------------------*/
 
 
 /* ----------------------INICIO CONTATOS-------------------------*/
-
 
 .contact .row{  /*Area total do form*/
     display: block;
@@ -317,12 +323,6 @@ section{
     flex-wrap: wrap;
     gap:1rem;
 }
-
-/*.contact .row .map{
-    flex:1 1 45rem;
-    width: 100%;
-    object-fit: cover;
-}*/
 
 .contact .row form{ /*Form*/
     border-radius: 10px;
@@ -364,12 +364,43 @@ section{
     background:none;
 }
 
+.contact .row form .inputBox .btn{
+    border-radius: 2px;
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:var(--cor-branco);
+    background: var(--cor-azul1);
+    cursor: pointer;
+}
+
+.contact .row form .inputBox .btn:hover{
+    letter-spacing: .2rem;
+}
+
+.contact .heading{
+    text-align: center;
+    color:var(--cor-azul1);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.contact .heading span{
+    color:var(--cor-azul2);
+    text-transform: uppercase;
+}
+
+
+
+
 /* ----------------------FINAL CONTATOS-------------------------*/
 
 
 /* ----------------------INICIO FOOTER-------------------------*/
 .footer{
-    background:var(--black);
+    /* background:var(--black); */
     text-align: center;
 }
 
@@ -382,16 +413,16 @@ section{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    color:#fff;
-    border:var(--border);
+    color:var(--cor-azul1);
+    /* border:var(--border); */
     margin:.3rem;
     border-radius: 50%;
 }
 
 .footer .share a:hover{
-    background-color: var(--main-color);
+    background-color: var(--cor-azul2);
 }
-
+/* 
 .footer .links{
     display: flex;
     justify-content: center;
@@ -409,17 +440,18 @@ section{
 
 .footer .links a:hover{
     background:var(--main-color);
-}
+} */
+
 
 .footer .credit{
     font-size: 1.7rem;
-    color:#fff;
+    color:var(--cor-azul2);
     font-weight: lighter;
     padding:1.5rem;
 }
 
 .footer .credit span{
-    color:var(--main-color);
+    color:var(--cor-azul2);
 }
 /* ----------------------FINAL FOOTER-------------------------*/
 
