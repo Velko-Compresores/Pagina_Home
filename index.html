@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Link arquivo css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/mediaquery450.css"> -->
 </head>
 <body>
     
@@ -101,45 +102,85 @@
 </section>
 <!-- Final Blog -->
 
-
 <!-- Inicio Contato  -->
-<section class="contact" id="contact">
-    <h1 class="heading"> <span> Nosso </span> Contato </h1>
-    <div class="row">
-        <form>
-            <h3> Nos mande uma mensagem </h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
+<section class="form" id="form">
+    <h1 class="heading"> <span>Formulário </span> de contato </h1>
+    <form class="form-row">
+        <!-- Nome | Empresa -->
+        <div class="campo-row">
+            <div class="field">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome">
             </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
+            <div class="field">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" placeholder="Nome da empresa">
             </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
+        </div>
+        <!-- Cidade | Estado -->
+        <div class="campo-row">
+            <div class="field">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" placeholder="Cidade">
             </div>
-            <input type="submit" value="Enviar" class="btn">
-        </form>
-    </div>
+            <div class="field">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" placeholder="Estado">
+            </div>
+        </div>
+        <!-- Email | Telefone -->
+        <div class="campo-row">
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="Telefone">
+            </div>
+        </div>
+        <!-- Mensagem -->
+        <div class="campo-row">
+            <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Mensagem"></textarea>
+            </div>
+        </div>
+        <!-- Botão -->
+        <div class="campo-row">
+        <!-- <button type="btn-submit">Enviar</button> -->
+            <a href="#" class="btn">ENVIAR</a>
+        </div>
+    </form>
 </section>
+
+
+
+
 <!-- Final Contato -->
 
 <!-- Inicio Footer  -->
-<section class="footer">
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-    </div>
+<section class="footer" id="footer">
+    <div class="box-container-footer">
+        <div class="box-footer">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="content">
+                <p> Velko Compressores Ldda. Rua Sargento Silva Nunes, 254 - Ramos, Rio de Janeiro </p>
+                <p> Contato: (21) 2594-6544 | E-mail: comercial@velko.com.br </p>
+            </div>
+        </div>
     <div class="credit"> Desenvolvido por DiegoJfsr |<span> 2025, Velko Compressores Ltda. </span> </div>
 </section>
 <!-- Final Footer -->
-
 
 <!-- Link Arquivo js -->
 <script src="js/script.js"></script>
 
 </body>
 </html>
+
+
