@@ -33,35 +33,13 @@ html{
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
-    width: .8rem;
-}
-
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb{
-    background: #fff;
-    border-radius: 5rem;
-}
-
-body{
-    background: var(--cor-branco);
-}
-
-section{
-    padding:2rem 7%;
-}
-
-
 /* ----------------------INICIO HEADER/MENU-------------------------*/
 .header{
     background: var(--cor-branco);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1.5rem 7%;
+    padding:1.5rem 2%;
     border-bottom: var(--cor-azul3);
     position: fixed;
     top:0; left: 0; right: 0;
@@ -119,7 +97,7 @@ section{
     max-width: 75rem;
     text-align:left;
     font-size: 5rem;
-    padding: 2rem 7%;
+    padding: 10rem;
     color:var(--cor-azul1);
 }
 
@@ -150,6 +128,7 @@ section{
 }
 
 /* ----------------------FINAL HOME------------------------*/
+
 
 /* ----------------------INICIO SOBRE-------------------------*/
 .about .row{
@@ -218,6 +197,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    padding: 4rem;
 }
 
 .blogs .box-container .box{
@@ -443,7 +423,7 @@ textarea {
 
 
 /* ----------------------media queries----------------------  */
-@media (max-width:991px){
+@media (max-width:1160px){
 
     html{
         font-size: 55%;
@@ -459,7 +439,7 @@ textarea {
 
 }
 
-@media (max-width:920px){
+@media (max-width:960px){
 
     #menu-btn{
         display: inline-block;
@@ -496,8 +476,9 @@ textarea {
         text-align: center;
     }
 
-    .home .content h3{
-        font-size: 4.5rem;
+    .home .content h4{
+        font-size: 4.2rem;
+        text-align: center;
     }
 
     .home .content p{
@@ -506,10 +487,12 @@ textarea {
 
 }
 
-/* @media (max-width:450px){
+@media (max-width:450px){
 
     html{
         font-size: 50%;
     }
 
-} */
+}
+
+
