@@ -427,6 +427,36 @@ textarea {
 /* ----------------------FINAL FOOTER-------------------------*/
 
 
+/* ----------------------Inicio Botao Whatsapp-------------------------*/
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    border: 3px solid #fff;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float i {
+    margin-top: 12px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+/* ----------------------Final do botao whatsapp----------------------  */
+
+
+
+
 /* ----------------------media queries----------------------  */
 @media (max-width:1160px){
 
@@ -446,19 +476,18 @@ textarea {
 
 @media (max-width:960px){
 
-
     .header .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         margin-bottom: 1rem;
-    }
+    } */
 
-    .header .logo img {
+   .header .logo img {
         max-width: 700px;
         height: auto;
-    }
+    } 
 
     #menu-btn{
         display: inline-block;
