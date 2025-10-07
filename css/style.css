@@ -446,6 +446,20 @@ textarea {
 
 @media (max-width:960px){
 
+
+    .header .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .header .logo img {
+        max-width: 700px;
+        height: auto;
+    }
+
     #menu-btn{
         display: inline-block;
     }
